@@ -49,3 +49,5 @@ opt.splitbelow = true
 
 opt.swapfile = false
 opt.encoding = "UTF-8"
+
+opt.foldenable = false

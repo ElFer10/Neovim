@@ -40,11 +40,17 @@ keymap.set("n", "<leader>ll", ":Limelight!!<CR>", { desc = "Activa/desactiva Lim
 keymap.set("n", "<leader>go", ":Goyo<CR>", { desc = "Activa Goyo" })
 keymap.set("n", "<leader>gx", ":Goyo!<CR>", { desc = "Desactiva Goyo" })
 
+-- Marcdown/Pandoc
+keymap.set("n", "<leader>Pd", ":!pandoc '%' -o '%<.docx'<CR>", { desc = "Exportar Documento de Word" })
+keymap.set("n", "<leader>Pp", ":!pandoc '%' -o '%<.pdf'<CR>", { desc = "Exportar PDF" })
+keymap.set("n", "<leader>Mb", "viwo<esc>i**<esc>ea**<esc>", { desc = "Bold" })
+keymap.set("n", "<leader>Mi", "viwo<esc>i_<esc>ea_<esc>", { desc = "Italic" })
 
 local api = vim.api
 
--- Comentarios
--- keymap.set("n", "<leader>7", "gtc", { desc = "Pone/quita comentarios (Modo Normal)" })
--- keymap.set("v", "<leader>7", "goc", { desc = "Pone/quita comentarios (Modo Normal)" })
-
 -- Zen Mode
+api.nvim_set_keymap("n", "<leader>zn", ":TZNarrow<CR>", {})
+api.nvim_set_keymap("v", "<leader>zn", ":'<,'>TZNarrow<CR>", {})
+api.nvim_set_keymap("n", "<leader>zf", ":TZFocus<CR>", {})
+api.nvim_set_keymap("n", "<leader>zm", ":TZMinimalist<CR>", {})
+api.nvim_set_keymap("n", "<leader>za", ":TZAtaraxis<CR>", {})
