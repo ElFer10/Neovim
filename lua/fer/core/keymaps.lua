@@ -9,7 +9,6 @@ keymap.set("n", "<leader>c", ":nohl<CR>", { desc = "Desmarca los textos encontra
 keymap.set('n', '+', '<C-a>', { desc = 'Incrementa un número' })
 keymap.set('n', '-', '<C-x>', { desc = 'Decrementa un número' })
 
-keymap.set('n', '<C-a>', 'gg<S-v>G', { desc = 'Selecciona todo' })
 keymap.set('n', 'j', 'gj')
 keymap.set('n', 'k', 'gk')
 
