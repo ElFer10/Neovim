@@ -3,7 +3,6 @@ vim.g.mapleader = ' '
 local keymap = vim.keymap
 
 keymap.set('i', 'kk', '<esc>', { desc = 'Sale de Insert escribiendo doble k' })
--- keymap.set('n', '<leader>r', ':so %<CR>', { desc = 'Recarga la configuración' })
 keymap.set("n", "<leader>c", ":nohl<CR>", { desc = "Desmarca los textos encontrados" })
 
 keymap.set('n', '+', '<C-a>', { desc = 'Incrementa un número' })
@@ -28,7 +27,6 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Abre el buffer actu
 keymap.set("n", "<leader>bn", ":bn<CR>", { desc = "Ir al siguiente buffer" })
 keymap.set("n", "<leader>bp", ":bp<CR>", { desc = "Ir al anterior buffer" })
 keymap.set("n", "<leader>bx", ":bd<CR>", { desc = "Cerrar buffer" })
-
 
 -- Indentado
 keymap.set("v", ">", ">gv", { desc = "Aumenta indentado" })
