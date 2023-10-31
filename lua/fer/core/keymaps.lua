@@ -5,8 +5,8 @@ local keymap = vim.keymap
 keymap.set('i', 'kk', '<esc>', { desc = 'Sale de Insert escribiendo doble k' })
 keymap.set("n", "<leader>c", ":nohl<CR>", { desc = "Desmarca los textos encontrados" })
 
-keymap.set('n', '+', '<C-a>', { desc = 'Incrementa un número' })
-keymap.set('n', '-', '<C-x>', { desc = 'Decrementa un número' })
+keymap.set('n', '<leader>+', '<C-a>', { desc = 'Incrementa un número' })
+keymap.set('n', '<leader>-', '<C-x>', { desc = 'Decrementa un número' })
 
 keymap.set('n', 'j', 'gj')
 keymap.set('n', 'k', 'gk')
